@@ -1,0 +1,132 @@
+/*Styling*/
+
+#fireOff, #smallEye, #smallClosed, #bigEye, #candleWingDown, #FridayTBlack , #wiredCat, #fact, #switchOn, #ciao, #wind {
+    display:none;
+    cursor: pointer;
+}
+
+#aliceCat, #treeWind, #factOne,  #factTwo, #factThree, #factFour, #factFive, #factSix, #factSeven, #factEight, #factNien, #factTen, #pumpkinOff, #heart, #nyanbg, #ghostSpooky {
+    display:none;
+}
+
+#moon, #start, #deadRip, #owl, #spookySpider, #candle, #house, #batKing, batFlap, #cat, #happy, #bow, #mySpider, #bonus, #switchLight {
+    cursor: pointer;
+}
+
+
+
+#display, #pg1, #nyanbg{
+    width:90vw;
+    margin:auto;
+    overflow:hidden;
+}
+
+
+
+body{
+      background-image: url(SVGS/pattern2.png);
+}
+
+#pg1{
+    position:fixed;
+    margin:auto;
+}
+
+
+#start:hover, #bonus:hover {
+    background-color: #848383;
+    border: 2px solid #848383;
+    color: white;
+}
+
+#witch {
+    width:100px;
+    height:100px;
+    position:absolute;
+    left:-1000px;
+    transition:left 8s;
+    cursor: pointer;
+}
+
+#theHouse {
+    transition: 1s;
+    transform-origin: bottom;
+}
+
+#miniBats, #miniBatsFlap {
+    opacity: 0;
+}
+
+
+#smoke{
+    opacity:0.3;
+}
+
+#moon{
+
+}
+
+.candies{
+    position:absolute;
+    top:-5%;
+    transition:top 5s;
+}
+
+
+
+
+/*Spider Animation*/
+
+#mySpider{
+  animation: mySpider 8s linear forwards;
+}
+
+@keyframes mySpider {
+    0%   { transform: translateY(-900px)}
+    10%  {transform: translateY(0px)}
+    20%  {transform: translateY(-900px)}
+    30%  {transform: translateX(50px)}
+    50%  {transform: translateX(-50px)}
+    70%  {transform: translateX(50px)}
+    90%  {transform: translateX(-30px)}
+    92%  {transform: translateX(0px)}
+    100%  {transform: translateY(-900px)}
+}
+
+
+@keyframes myLadyBug{
+    0%  {transform: translateY(0px)}
+    15%  {transform: translateY(-900px)}
+    100%  {transform: translateY(-900px)}
+}
+
+#myLadyBug{
+  animation: myLadyBug 4s linear forwards;
+    animation-delay: 0.9s;
+}
+
+
+/*
+Backup css anim for first page slider
+
+
+#pg1{
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes leaveScreen {
+    from {right: 0px;}
+    to {right: 2000px;}
+}
+*/
+
+
+#nyny {
+    position:absolute;
+    left:-2000px;
+    transition:left 20s;
+    transition-delay: 3s;   
+}
